@@ -2,5 +2,7 @@
   "name": "NEXORA - Everything. Connected.",
   "description": "All-in-one Nigerian digital platform connecting you to jobs, market prices, verified artisans, transport, utilities, community reports, properties, and business storefronts.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
