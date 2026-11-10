@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Figtree', sans-serif;
+  --color-midnight: #0E1A3A;
+  --color-indigo-dark: #26397F;
+  --color-emerald-brand: #0FB57F;
+  --color-marigold-brand: #FFB627;
+  --color-coral-brand: #FF5C6C;
+  --color-sky-brand: #2E7BFF;
+  --color-violet-brand: #8A5CFF;
+  --color-mist: #F3F6FB;
+  --color-card-dark: #131E45;
+  --color-bg-dark: #0A1230;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Smooth transitions for theme switching */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 26, 58, 0.2);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(238, 242, 255, 0.2);
+}
